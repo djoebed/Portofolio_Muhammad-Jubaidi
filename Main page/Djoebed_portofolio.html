@@ -1,113 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M. Jubaidi Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="Immage/mj_icon.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Immage/mj_icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
     <header>
-        <h1>MUHAMMAD JUBAIDI</h1>
-        <p>Newbie Programmer and Web Developer | Together we build a better future</p> 
-	<p id="currentTime"></p>
+      <h1>MY PERSONAL PORTOFOLIO</h1>
+      <p>
+        Newbie Programmer and Web Developer | Together we build a better future
+      </p>
+      <p id="currentTime"></p>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
-        <section id="about" class="section">
-			<h1>Hello and welcome to my personal portfolio website!</h1>
-            <h2>About Me</h2>
-            <div class="about">
-                <img src="Immage/Djoebed.jpg" alt="Your Photo">
-				<ul class="address">
-					
-					<li>
-							<ul class="address-text">
-								<li><b>NAME</b></li>
-								<li>MUHAMMAD JUBAIDI</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>NICKNAME</b></li>
-								<li>Djoebed</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>BORN</b></li>
-								<li>JAKARTA, JULY 2<sup>nd</sup>, 1988</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>ADDRESS</b></li>
-								<li>SERANG CITY</li>
-							</ul>
-						</li>
-					</ul>
-				
-				<p><b>Hello mate!</b>
-				<br><br>I'm a beginner developer with a passion for creating beautiful and functional program and web experiences. I study about programming language and Web Development with Universitas Pamulang - Serang and watch the programmer Youtube video. I design with CSS and HTML, but i have interest in java script programming. I love building websites, constantly learning and expanding my skills.
-				<br><br>I'm able to use: HTML,CSS, JavaScript, SQL.
-				<br><br>I am also proficient: Bootstrap, C++ and java.</p>
-            </div>
-        </section>
+      <section id="home" class="section">
+        <div class="home-content">
+          <h1>Hello and welcome to my personal portfolio website!</h1>
+          <p>
+            This is the place where I showcase my journey in programming, web
+            development, and various technology projects I've been working on.
+            Explore around to see my skills, experiences, and the creations I've
+            built.
+          </p>
+        </div>
+      </section>
 
-        <section id="projects" class="section">
-            <h2>My Projects List</h2>
-            <div class="projects">
-                <div class="project">
-                    <img src="Immage/Jujioutdoor.jpg" alt="Project 1">
-                     <h3>Web rental of camping and climbing equipment</h3>
-                    <p>"A website that provides camping and climbing equipment for individuals, groups, or families. With user-friendly features, everyone can easily access it. Just choose the desired item, click rent, and wait for the item to arrive at your home."</p>
-		<a href="jujioutdoor/jujioutdoor.html" target="_blank"><strong>jujioutdoor.html</strong></a>.
-                </div>
-                <div class="project">
-                    <img src="Immage/Proj_2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>"Still looking for an idea."</p>
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about">
+          <div data-aos="zoom-in" data-aos-duration="500">
+            <img src="Immage/Djoebed.jpg" alt="MyPhoto" />
+          </div>
 
-                </div>
-                <div class="project">
-                    <img src="Immage/Proj_3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>"Still on wishful thinking."</p>
-                </div>
+          <div class="profile-info">
+            <div class="info-item">
+              <span class="info-label">NAME</span>
+              <span class="info-value">MUHAMMAD JUBAIDI</span>
             </div>
-        </section>
+            <div class="info-item">
+              <span class="info-label">NICKNAME</span>
+              <span class="info-value">Djoebed</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">BORN</span>
+              <span class="info-value">JAKARTA, JULY 2<sup>nd</sup>, 1988</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">ADDRESS</span>
+              <span class="info-value">SERANG CITY</span>
+            </div>
+          </div>
 
-        <section id="contact" class="section">
-            <h2>Feel free to reach out!</h2>
-            <div class="contact">
-                <p>Find me at:</p>
-                <a href="mailto:djoebed@outlook.com">
-			<img src="Immage/email.png" alt="email.png" style="width:60px;height:60px;"></a>
-                <a href="https://linkedin.com/in/muhammad jubaidi" target="_blank">
-			<img src="Immage/Linkdin.jpg" alt="Linkdin.jpg" style="width:60px;height:60px;"></a>
-		<a href="https://web.whatsapp.com/+62-858-8258-3744" target="_blank">
-			<img src="Immage/WA.jpg" alt="WhatsApp.jpg" style="width:60px;height:60px;"></a>
-		<a href="https://www.instagram.com/djoebed" target="_blank">
-			<img src="Immage/IG.jpg" alt="Instagram.jpg" style="width:60px;height:60px;"></a>
+          <p>
+            <b>Hello mate!</b> <br /><br />I'm a beginner developer with a
+            passion for creating beautiful and functional program and web
+            experiences. I study about programming language and Web Development
+            with Universitas Pamulang - Serang and watch the programmer Youtube
+            video. I design with CSS and HTML, but i have interest in java
+            script programming. I love building websites, constantly learning
+            and expanding my skills. <br /><br />I'm able to use: HTML,CSS,
+            JavaScript, SQL. <br /><br />I am also proficient: Bootstrap, C++
+            and java.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>My Projects List</h2>
+        <div class="projects">
+          <div class="project">
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <img
+                src="Immage/Jujioutdoor.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-        </section>
+            <h3>Web rental of camping and climbing equipment</h3>
+            <p>
+              "A website that provides camping and climbing equipment for
+              individuals, groups, or families. With user-friendly features,
+              everyone can easily access it. Just choose the desired item, click
+              rent, and wait for the item to arrive at your home."
+            </p>
+            <a href="jujioutdoor/jujioutdoor.html" target="_blank">
+              <strong>jujioutdoor (Beta)</strong></a
+            >
+          </div>
+
+          <div class="project">
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <img src="Immage/Main.png" alt="Project 2" class="project-img" />
+            </div>
+            <h3>Form Transaksi & Perhitungan Bonus Pembelian</h3>
+            <p>
+              "This web-based application is designed as a simple point-of-sale
+              system for recording transactions and automatically calculating
+              in-store purchase bonuses. The focus is on a user-friendly
+              experience and automating the store's operational business logic."
+            </p>
+            <a
+              href="https://djoebed.github.io/Form-Pembelian-Barang/"
+              target="_blank"
+            >
+              <strong>Purchase Bonus Calculation Form (Beta)</strong></a
+            >
+          </div>
+
+          <div class="project">
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <img
+                src="Immage/profile.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h3>Company Profile</h3>
+            <p>
+              "This website is the official company profile for P.T. Zhian Utama
+              Mandiri, a company engaged in canvas manufacturing and trading.
+              This digital platform is designed with a modern, minimalist, and
+              functional style to represent the company's identity and business
+              credibility to potential clients and business partners."
+            </p>
+            <a
+              href="https://djoebed.github.io/Company-Profile/Company%20Profile/index.html"
+              target="_blank"
+            >
+              <strong>Company Profile (Alpha)</strong></a
+            >
+          </div>
+
+          <div class="project">
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <img src="Immage/TcToe.png" alt="Project 4" class="project-img" />
+            </div>
+            <h3>Tic Tac Toe Game</h3>
+            <p>
+              "An interactive web-based game for two players to relieve stress.
+              Developed using HTML, CSS, and JavaScript for easy play by
+              everyone."
+            </p>
+            <a
+              href="https://djoebed.github.io/Tic_Tac_Toe_Game/Tic Tac Toe/index.html"
+              target="_blank"
+              ><strong>Tic Tac Toe Game (Final)</strong></a
+            >
+          </div>
+
+          <div class="project">
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <img
+                src="Immage/todolist.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h3>To-Do List Application</h3>
+            <p>
+              "The Daily Task Management app is a web-based application that
+              helps users record, manage, and monitor daily tasks based on
+              specific dates. It's built using HTML, CSS, and JavaScript without
+              any additional frameworks, making it lightweight and easy to
+              understand. This app implements the CRUD (Create, Read, Update,
+              Delete) concept, allowing users to add, view, modify, and delete
+              task data. Each task can be assigned a date so that tasks can be
+              grouped and displayed based on their schedule."
+            </p>
+            <a
+              href="https://djoebed.github.io/To-do-list-aplication/"
+              target="_blank"
+              ><strong>ToDO List Application (Beta)</strong></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Feel free to reach out!</h2>
+        <div class="contact">
+          <p>Find me at:</p>
+          <a href="mailto:djoebed@outlook.com">
+            <img
+              src="Immage/email.png"
+              alt="email.png"
+              style="width: 60px; height: 60px"
+          /></a>
+          <a href="https://linkedin.com/in/muhammad jubaidi" target="_blank">
+            <img
+              src="Immage/Linkdin.jpg"
+              alt="Linkdin.jpg"
+              style="width: 60px; height: 60px"
+          /></a>
+          <a href="https://web.whatsapp.com/+6285882583744" target="_blank">
+            <img
+              src="Immage/WA.jpg"
+              alt="WhatsApp.jpg"
+              style="width: 60px; height: 60px"
+          /></a>
+          <a href="https://www.instagram.com/djoebed" target="_blank">
+            <img
+              src="Immage/IG.jpg"
+              alt="Instagram.jpg"
+              style="width: 60px; height: 60px"
+          /></a>
+        </div>
+      </section>
     </div>
-	
-	<script src="Script.js"></script>
 
-    <footer>
-        &copy; 2024 Muhammad Jubaidi. All Rights Reserved.
-	
-    </footer>
+    <div id="imageModal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImg" />
+      <div id="modalCaption"></div>
+    </div>
 
-		
-</body>
+    <button id="backToTop" class="back-to-top" title="Kembali ke Atas">
+      &#8593;
+    </button>
+
+    <script src="Script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
+
+    <footer>&copy; 2025 Muhammad Jubaidi. All Rights Reserved.</footer>
+  </body>
 </html>
