@@ -49,7 +49,7 @@ window.addEventListener("click", (event) => {
 });
 
 // ==========================================
-// LOGIKA TOMBOL PANAH KE ATAS (BACK TO TOP)
+// LOGIKA TOMBOL PANAH KE ATAS (BACK TO TOP))
 // ==========================================
 
 const backToTopBtn = document.getElementById("backToTop");
