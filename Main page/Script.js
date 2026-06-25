@@ -78,7 +78,7 @@ backToTopBtn.addEventListener("click", function () {
 });
 
 function sendWhatsApp() {
-  const nomor = "6285882583744";
+  const nomor = "628588258374";
   const pesan = "Halo, saya tertarik dengan portfolio Anda.";
 
   window.open(
