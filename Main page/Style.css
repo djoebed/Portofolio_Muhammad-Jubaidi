@@ -31,6 +31,31 @@ header p {
   text-align: right;
 }
 
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+#themeBtn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+#themeBtn:hover {
+  transform: scale(1.1);
+  background: #f5f5f5;
+}
+
 nav {
   display: flex;
   justify-content: right;
@@ -140,7 +165,7 @@ nav a:hover {
 
 .info-item {
   display: grid;
-  grid-template-columns: 120px 1fr; 
+  grid-template-columns: 120px 1fr;
   align-items: center;
   gap: 30px;
 }
@@ -183,7 +208,7 @@ nav a:hover {
   padding: 20px;
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
- 
+
   transition:
     transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     box-shadow 0.4s ease;
@@ -199,7 +224,6 @@ nav a:hover {
   max-width: 100%;
   border-radius: 10px;
 }
-
 
 .project-img {
   cursor: pointer;
@@ -307,31 +331,30 @@ footer {
   }
 }
 
-
 .back-to-top {
   display: none; /* Tersembunyi secara default */
   position: fixed; /* Melayang stabil di layar */
   bottom: 30px;
   right: 30px;
   z-index: 99;
-  border: 2px solid #4facfe; 
+  border: 2px solid #4facfe;
   outline: none;
   background-color: white;
-  color: #4facfe; 
+  color: #4facfe;
   cursor: pointer;
   width: 50px;
   height: 50px;
-  border-radius: 50px; 
+  border-radius: 50px;
   font-size: 22px;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .back-to-top:hover {
   background-color: #000000;
   color: white;
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
 @media only screen and (max-width: 700px) {
@@ -342,4 +365,38 @@ footer {
     height: 45px;
     font-size: 18px;
   }
+}
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode header {
+  background: linear-gradient(to right, #2c2c2c, #1c1c1c);
+  color: white;
+}
+
+.dark-mode nav {
+  background: linear-gradient(to right, #222, #111);
+}
+
+.dark-mode nav a {
+  color: white;
+}
+
+.dark-mode .home-content,
+.dark-mode .project {
+  background: #1f1f1f;
+  color: white;
+}
+
+.dark-mode footer {
+  background: black;
+}
+
+.dark-mode .info-label,
+.dark-mode .info-value,
+.dark-mode .about p {
+  color: white;
 }
