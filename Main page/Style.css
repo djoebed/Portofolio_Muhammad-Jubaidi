@@ -140,7 +140,7 @@ nav a:hover {
 
 .info-item {
   display: grid;
-  grid-template-columns: 120px 1fr; /* Mengunci kolom label agar tidak menabrak teks nilai */
+  grid-template-columns: 120px 1fr; 
   align-items: center;
   gap: 30px;
 }
@@ -183,7 +183,7 @@ nav a:hover {
   padding: 20px;
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
-  /* Animasi Hover Bergerak Halus */
+ 
   transition:
     transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     box-shadow 0.4s ease;
@@ -200,7 +200,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* Efek Pointer kursor pada Gambar Project */
+
 .project-img {
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -235,9 +235,6 @@ footer {
   color: white;
 }
 
-/* ==========================================================================
-   STYLE JENDELA POP-UP (MODAL) GAMBAR PROJECT
-   ========================================================================== */
 .modal {
   display: none;
   position: fixed;
@@ -310,33 +307,31 @@ footer {
   }
 }
 
-/* ==========================================================================
-   STYLE TOMBOL PANAH KE ATAS (BACK TO TOP)
-   ========================================================================== */
+
 .back-to-top {
   display: none; /* Tersembunyi secara default */
   position: fixed; /* Melayang stabil di layar */
   bottom: 30px;
   right: 30px;
   z-index: 99;
-  border: 2px solid #4facfe; /* Warna border lingkaran */
+  border: 2px solid #4facfe; 
   outline: none;
   background-color: white;
-  color: #4facfe; /* Warna simbol panah */
+  color: #4facfe; 
   cursor: pointer;
   width: 50px;
   height: 50px;
-  border-radius: 50px; /* Membuat lingkaran sempurna */
+  border-radius: 50px; 
   font-size: 22px;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease; /* Animasi hover */
+  transition: all 0.3s ease; 
 }
 
 .back-to-top:hover {
   background-color: #000000;
   color: white;
-  transform: translateY(-5px); /* Sedikit melompat ke atas saat di-hover */
+  transform: translateY(-5px); 
 }
 
 @media only screen and (max-width: 700px) {
