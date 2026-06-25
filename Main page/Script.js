@@ -78,3 +78,13 @@ backToTopBtn.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+function sendWhatsApp() {
+  const nomor = "6285882583744";
+  const pesan = "Halo, saya tertarik dengan portfolio Anda.";
+
+  window.open(
+    `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`,
+    "_blank",
+  );
+}
