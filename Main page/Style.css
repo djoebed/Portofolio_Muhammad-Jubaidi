@@ -116,7 +116,6 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-/* Diperbarui agar lebar gambar mengikuti pembungkus AOS dan tidak merusak layout */
 .about img {
   width: 100%;
   max-width: 200px;
@@ -130,9 +129,6 @@ nav a:hover {
   font-size: 1.1em;
 }
 
-/* ==========================================================================
-   PERBAIKAN: CSS GRID DATA DIRI (MENGGANTIKAN UL.ADDRESS YANG BERTABRAKAN)
-   ========================================================================== */
 .profile-info {
   display: flex;
   flex-direction: column;
@@ -159,14 +155,12 @@ nav a:hover {
 .info-value {
   color: #111;
   font-size: 1.5em;
-  word-break: break-word; /* Mencegah teks keluar dari layar */
+  word-break: break-word;
 }
 
-/* RESPONSIF: Masukkan kode di bawah ini ke dalam bagian Media Queries Anda 
-   atau taruh di bagian paling bawah file CSS Anda */
 @media only screen and (max-width: 500px) {
   .info-item {
-    grid-template-columns: 1fr; /* Mengubah susunan menjadi bertumpuk vertikal pada layar ponsel */
+    grid-template-columns: 1fr;
     gap: 2px;
     margin-bottom: 5px;
   }
@@ -196,7 +190,6 @@ nav a:hover {
   cursor: default;
 }
 
-/* Efek Card Proyek Bergerak Melayang Saat Hover */
 .project:hover {
   transform: translateY(-12px) scale(1.02);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
