@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 190px; 
 }
 
 body {
@@ -7,12 +8,21 @@ body {
   font-family: "Roboto", sans-serif;
   background: #f5fffa;
   color: #333;
+padding-top: 170px;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header {
   background: linear-gradient(to right, #d799c5, #a7b9c9);
   color: #000000;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
 }
 
